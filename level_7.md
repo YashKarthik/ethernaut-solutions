@@ -1,4 +1,4 @@
-# Level 6: [Force](https://ethernaut.openzeppelin.com/level/0x46f79002907a025599f355A04A512A6Fd45E671B)
+# Level 7: [Force](https://ethernaut.openzeppelin.com/level/0x46f79002907a025599f355A04A512A6Fd45E671B)
 
 ## Level objectives:
 1. Increase the balance of the contract to greater than zero.
