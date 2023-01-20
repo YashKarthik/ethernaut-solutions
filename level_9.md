@@ -1,4 +1,4 @@
-# Level 7: [King](https://ethernaut.openzeppelin.com/level/0x725595BA16E76ED1F6cC1e1b65A88365cC494824)
+# Level 9: [King](https://ethernaut.openzeppelin.com/level/0x725595BA16E76ED1F6cC1e1b65A88365cC494824)
 
 ## Level objectives:
 1. Send ether to become king.
