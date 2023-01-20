@@ -54,3 +54,4 @@ web3.eth.sendTransaction({
     }]
   }, ["0xBaC5b975FF516ac9d3a88a20A6820A3BeD430e28"])
 ```
+- Also, set high gas when attacking.
