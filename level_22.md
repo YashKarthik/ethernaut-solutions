@@ -1,4 +1,4 @@
-# Level 20: [Dex](https://ethernaut.openzeppelin.com/level/0x9CB391dbcD447E645D6Cb55dE6ca23164130D008)
+# Level 22: [Dex](https://ethernaut.openzeppelin.com/level/0x9CB391dbcD447E645D6Cb55dE6ca23164130D008)
 
 ## Level objectives:
 Drain one of the tokens from dex.
